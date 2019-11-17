@@ -1,0 +1,50 @@
+La commande yes pour répondre automatiquement ex:
+yes | apt-get install htop
+
+Angry ip Scanner: scan network
+
+Diagnostique réseau
+--------------------
+mtr 8.8.8.8
+
+Afficher la météo
+-------------------
+curl wttr.in
+
+Affiche les dossiers les plus lourd dans un point de l'arborescence
+--------------------------------------------------------------------
+ncdu
+
+Affiche IP
+-----------
+hostnamectl -I
+
+Supprime disque
+---------------
+nwipe
+
+Affiche infos HW
+-----------------
+inxi -Fx
+
+Affiche le % des disques
+-------------------------
+pydf
+
+hdparm sdparm https://doc.ubuntu-fr.org/hdparm
+
+YASAT
+linuxlogo -L list
+Diodon
+mosh
+
+Recherche inversé photo sur tineye
+
+espeak -v fr "titi toto"
+
+
+Tasksel
+https://wiki.debian-fr.xyz/Tasksel
+
+test port avec telnet
+
