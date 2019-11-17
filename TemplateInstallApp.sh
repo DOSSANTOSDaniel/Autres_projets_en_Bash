@@ -1,12 +1,10 @@
 #!/bin/bash
 
 # Description:
-#	Permet l'application supplémentaire de programmes (pour mieux faire la transition de windows vers Linux)
+#	Permet l'installation de mes applications
 #----------------------------------------------------------------#
 # Usage: ./InstallGUIAppExtra.sh
 #	Exécuter le script en root!
-# 	Se connecter en root avec cette commande "su -" !
-#	Durée: ~ minutes
 #
 # Auteurs:
 #  	Daniel DOS SANTOS < daniel.massy91@gmail.com >
@@ -94,6 +92,7 @@ wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefont
 apt install ./ttf-mscorefonts-installer_3.7_all.deb -y
 wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v1.5.0.oxt
 rm ttf-mscorefonts-installer_3.7_all.deb
+apt install ttf-mscorefonts-installer -y
 for pack in $liste
 do
 	if [[ $pack == "libreoffice-l10n-fr" || $pack == "libreoffice-l10n-en-gb" ]]
