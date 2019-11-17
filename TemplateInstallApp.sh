@@ -19,6 +19,23 @@ usertos=$(w | awk '{print $1}' | awk 'NR==3')
 interfacewifi=$(ip link | grep ^3 | awk '{print $2}' | sed s'/://')
 interfacenet=$(ip link | grep ^2 | awk '{print $2}' | sed s'/://')
 liste=$(apt list | grep libreoffice-l10n-* | awk -F'/' '{print $1}')
+chem="/etc/apt/apt.conf.d/50unattended-upgrades"
+
+# Configuration des mises à jours automatiques
+apt install unattended-upgrades -y
+apt install apt-listchanges -y
+dpkg-reconfigure -plow unattended-upgrades
+# activer les mises à jours en fonction des types de paquets, stable, proposed-udpates, security
+sed -i -e 's/\/\/      "${distro_id}:${distro_codename}-updates";/      "${distro_id}:${distro_codename}-updates";/' $chem
+sed -i -e 's/\/\/      "${distro_id}:${distro_codename}-proposed";/      "${distro_id}:${distro_codename}-updates";/' $chem
+# activer les notifications par mail
+sed -i -e 's/\/\/Unattended-Upgrade::Mail "root";/Unattended-Upgrade::Mail "danielitto91@gmail.com";/' $chem
+# activer le redémarrage après mise à jour
+sed -i -e 's/\/\/Unattended-Upgrade::Automatic-Reboot "false";/Unattended-Upgrade::Automatic-Reboot "true";/' $chem
+# heure du redémarrage
+sed -i -e 's/\/\/Unattended-Upgrade::Automatic-Reboot-Time "02:00";/Unattended-Upgrade::Automatic-Reboot-Time "20:18";/' $chem
+# mise à jour maintenant
+unattended-upgrades -v
 
 # installation de simplenote
 wget https://github.com/Automattic/simplenote-electron/releases/download/v1.10.0/Simplenote-linux-1.10.0-amd64.deb
