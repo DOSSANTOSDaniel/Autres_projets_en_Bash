@@ -122,6 +122,7 @@ apt install rhythmbox -y
 apt install putty -y
 apt install git -y
 apt install nwipe -y
+apt install fslint -y
 
 # nettoyage du système
 apt autoremove --purge -y
