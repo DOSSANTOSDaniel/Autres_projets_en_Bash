@@ -110,7 +110,8 @@ apt install -f
 
 # Installation de Redshift
 apt-get install redshift
-
+# pour trouver l'affichage courant
+ecran=$(xrandr | grep Screen | awk '{print $2}' | awk -F: '{print $1}')
 echo "
 ; Global settings for redshift
 [redshift]
@@ -161,7 +162,7 @@ lon=11.6
 ; second screen. If this option is not specified, Redshift will try
 ; to adjust _all_ screens.
 [randr]
-screen=1
+screen=$ecran
 " > /home/"$usertos"/.config/redshift.conf
 
 # Autres programmes
