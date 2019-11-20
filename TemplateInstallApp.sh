@@ -176,7 +176,7 @@ apt install nextcloud-desktop -y
 apt install zenmap -y
 apt install keepassx -y
 apt install rhythmbox -y
-apt install putty -y
+apt install gnome-connection-manager -y
 apt install git -y
 apt install nwipe -y
 apt install fslint -y
