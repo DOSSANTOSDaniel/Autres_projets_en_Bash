@@ -8,13 +8,9 @@ videos="VIDEO"
 images="PHOTO"
 musiques="AUDIO"
 
-echo "
-__  __ _       _ ____  _     _   _    _    
-|  \/  (_)_ __ (_)  _ \| |   | \ | |  / \   
-| |\/| | | '_ \| | | | | |   |  \| | / _ \  
-| |  | | | | | | | |_| | |___| |\  |/ ___ \ 
-|_|  |_|_|_| |_|_|____/|_____|_| \_/_/   \_\
-"
+apt install toilet -y
+sleep 2
+toilet -f smblock --filter metal 'MiniDLNA'
 
 apt update
 apt full-upgrade -y
