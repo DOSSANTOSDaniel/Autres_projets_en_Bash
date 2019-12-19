@@ -102,9 +102,7 @@ echo "dockremap:500000:65536" >>/etc/subgid
 
 cat <<EOF >/etc/docker/daemon.json
 {
- "userns-remap" : "default"
-}
-{
+ "userns-remap" : "default",
  "exec-opts" : ["native.cgroupdriver=systemd"]
 }
 EOF
