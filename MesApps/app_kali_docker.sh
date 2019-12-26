@@ -8,7 +8,6 @@ apt full-upgrade -y
 
 # variables
 usertos="root"
-interfacenet=$(ip link | grep ^2 | awk '{print $2}' | sed s'/://')
 versiontor=9.0.1
 
 # installation de simplenote
