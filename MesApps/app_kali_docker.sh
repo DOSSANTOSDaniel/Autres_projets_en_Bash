@@ -58,7 +58,6 @@ apt install nethogs -y
 apt install maltego -y
 apt install metasploit-framework -y
 apt install burpsuite -y
-apt install wireshark -y
 apt install aircrack-ng -y
 apt install hydra -y
 apt install nmap -y
