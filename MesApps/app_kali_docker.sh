@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Description:
+#	Permet l'installation de mes applications
+#----------------------------------------------------------------#
+# Usage: ./app_kali_docker.sh
+#	Exécuter le script en root!
+#
+# Auteurs:
+#  	Daniel DOS SANTOS < daniel.massy91@gmail.com >
+#----------------------------------------------------------------#
+
+### Installation
+
 # init
 apt clean 
 apt update 
