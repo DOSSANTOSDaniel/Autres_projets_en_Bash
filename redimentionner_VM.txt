@@ -1,4 +1,0 @@
-
-vboxmanage modifymedium /home/user/VirtualBox\ VMs/vm/vm-disk2.vdi --resize 7700000
-
-resize2fs /dev/sdb
