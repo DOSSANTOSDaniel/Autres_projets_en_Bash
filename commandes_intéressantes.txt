@@ -47,4 +47,3 @@ Tasksel
 https://wiki.debian-fr.xyz/Tasksel
 
 test port avec telnet
-
