@@ -1,0 +1,2 @@
+Supprimer toutes les lignes d'un fichier :
+:1,$d 
