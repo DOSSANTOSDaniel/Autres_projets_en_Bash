@@ -55,3 +55,8 @@ curl -L -O url
 -L   suivre une redirection
 
 -O sauvegarde le fichier avec le nom source
+
+commande permettant de supprimer tous le images et containers plus utilisés:
+docker system prune
+
+ssh -o "ServerAliveInterval 60" user@domain
