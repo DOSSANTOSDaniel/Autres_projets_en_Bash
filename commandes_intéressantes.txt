@@ -47,3 +47,11 @@ Tasksel
 https://wiki.debian-fr.xyz/Tasksel
 
 test port avec telnet
+
+Permet de télécharger des objets comme avec wget
+-----------------------------------------------------
+curl -L -O url
+
+-L   suivre une redirection
+
+-O sauvegarde le fichier avec le nom source
