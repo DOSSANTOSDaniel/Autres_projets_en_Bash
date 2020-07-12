@@ -60,3 +60,5 @@ commande permettant de supprimer tous le images et containers plus utilisés:
 docker system prune
 
 ssh -o "ServerAliveInterval 60" user@domain
+
+commande dfc
