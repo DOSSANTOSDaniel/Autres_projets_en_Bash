@@ -36,10 +36,18 @@ Supprimer ou couper à partir du curseur vers la fin de la ligne
 d$
 Même principe pour copier
 
-Quitter vim
+Enregistrer et quitter vim
 différence entre :wq et :x
 :wq la date de modification change toujours même si on a rien modifier
 :x si aucun changement la date de modification n'est pas changé
+
+Enregistrer et ferme toutes les fenetres
+:wqa 
+:xa
+
+Insertion de texte
+o  Sur une nouvelle ligne en dessous de la ligne courante
+O  Sur une nouvelle ligne au-dessus de la ligne courante
 
 
 
