@@ -1,2 +1,41 @@
 Supprimer toutes les lignes d'un fichier :
 :1,$d 
+
+fin de ligne 
+$
+
+debut de ligne
+0
+
+effacer la ligne à partir du curseur
+d$
+
+effacer la ligne
+dd
+
+retour arrière
+u
+
+retour arrier toutes modifs
+U
+
+copier coller
+dd : copier la ligne
+p : colle la ligne
+
+numéro de ligne ou nous sommes
+control G
+
+aller tout en haut du fichier
+gg
+
+aller en bas du fichier
+shift g
+
+aller à la ligne 520
+
+:520
+
+rechercher un mot
+/mot
+
