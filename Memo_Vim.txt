@@ -1,41 +1,78 @@
-Supprimer toutes les lignes d'un fichier :
+Supprime toutes les lignes d'un fichier :
 :1,$d 
 
-fin de ligne 
+Va à la fin de la ligne 
 $
 
-debut de ligne
+Va au début de la ligne
 0
 
-effacer la ligne à partir du curseur
+Efface la ligne à partir du curseur
 d$
 
-effacer la ligne
+Efface la ligne
 dd
 
-retour arrière
+Retour arrière
 u
 
-retour arrier toutes modifs
+Retour arrière pour toutes les modifications
 U
 
-copier coller
-dd : copier la ligne
-p : colle la ligne
+Copier couper coller
+dd : couper la ligne
+yy : copier la ligne
+p : coller la ligne
 
-numéro de ligne ou nous sommes
+Couper copier coller plusieurs lignes
+exemple avec 5 lignes:
+y4 : copier
+d4 : couper
+p : coller
+
+Supprimer ou couper à partir du curseur vers le début de la ligne
+d0
+Supprimer ou couper à partir du curseur vers la fin de la ligne
+d$
+Même principe pour copier
+
+Rechercher et remplacer du texte
+Exemple remplacer jean par daniel :
+Remplace la première occurence de la ligne ou se trouve le curseur (:s/jean/daniel/)
+Remplace toutes les occurences de la ligne ou se trouve le curseur (:s/jean/daniel/g)
+(:#,#s/jean/daniel/g)
+
+Numéro de ligne ou nous sommes
 control G
 
-aller tout en haut du fichier
+Aller tout en haut du fichier
 gg
 
-aller en bas du fichier
+Aller en bas du fichier
 shift g
 
-aller à la ligne 520
-
+Aller à la ligne 520
 :520
 
-rechercher un mot
+Rechercher un mot
 /mot
+pour le résultat suivant : n
+pour le résultat précédent : N
+
+Afficher les numeros de ligne
+:set nu
+:set number
+
+Ouvrir plusieurs fichiers en même temps sans avoir à fermer Vim
+:badd <nouveau fichier>
+Afficher les fichiers dans le buffeur
+:ls
+Switcher entre les fichiers
+:b<numéro>
+Autre facon de switcher
+Ocurence suivante : (:bn)
+Occurence précédente : (:bp)
+
+
+
 
