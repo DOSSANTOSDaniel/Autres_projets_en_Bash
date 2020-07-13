@@ -40,7 +40,21 @@ Rechercher et remplacer du texte
 Exemple remplacer jean par daniel :
 Remplace la première occurence de la ligne ou se trouve le curseur (:s/jean/daniel/)
 Remplace toutes les occurences de la ligne ou se trouve le curseur (:s/jean/daniel/g)
-(:#,#s/jean/daniel/g)
+Remplace toutes les occurences sur une plage de lignes (:<numéro de ligne, début>,<numéro de ligne, fin>s/jean/daniel/g)
+Exemple : Remplacer toutes les occurences de la ligne 5 à la ligne 16 (:5,16s/jean/daniel/g)
+Remplacer toutes les occurences dans tout le fichier
+:%s/jean/daniel/g
+
+Fusionner des fichiers
+Incerer un fichier à partir de la position du curseur
+:r<nom du fichier>
+On peut utiliser l'autocompletion pour trouver le fichier
+
+Splite l'écran et ouvre un autre fichier
+:sp <nom du fichier> (Split horizontalement)
+:vsp <nom du fichier> (Split verticalement)
+Pour passer d'une fenetre à l'autre (control+w)
+Pour fermer une fenetre (control +wq)
 
 Numéro de ligne ou nous sommes
 control G
@@ -73,6 +87,11 @@ Autre facon de switcher
 Ocurence suivante : (:bn)
 Occurence précédente : (:bp)
 
+Lancer une commande externe à vim
+:!
+Exemple (:! ps -aux)
+
+Imprimer des documents
 
 
 
