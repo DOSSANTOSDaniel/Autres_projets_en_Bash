@@ -12,7 +12,7 @@ Ce script va nous servir a découvrir le language Powershell
  2 :Lister les fichiers du répertoire courant
  3 :Afficher les informations consernant un fichier
  4 :Changer de répertoire
- 5 :Afficher les n premiéres lignes d'un fichiers donnée		
+ 5 :Afficher les n premiéres lignes d'un fichiers donné		
 #================================================================#
 AUTEUR: Daniel DOS SANTOS < daniel.massy91@gmail.com >			
 #================================================================#
@@ -24,8 +24,8 @@ USAGE: dpshell.ps1
 #================================================================#
 NOTES: 
 
-L'utilisateur doit valider par le touche entrée se qui lui
-permet d'avoir le temps de visualiser le résultat pour note ou ..     
+L'utilisateur doit valider par la touche entrée, ce qui lui
+permet d'avoir le temps de visualiser le résultat ...     
 #================================================================#
 POWERSHELL VERSION: 5.1  
 #================================================================#
