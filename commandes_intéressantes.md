@@ -72,3 +72,7 @@ ssh -o "ServerAliveInterval 60" user@domain
 Affiche l'ocupation des disques
 --------------------------------
 dfc
+
+Affiche les serveurs samba dans un réseau 
+------------------------------------------
+findsmb
