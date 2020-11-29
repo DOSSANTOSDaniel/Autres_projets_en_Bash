@@ -1,16 +1,20 @@
 #!/bin/bash
 
 # Variables
-userdlna="chayan"
-intnet="eno1"
+userdlna="root"
+pathdlna="/home/Partage"
+intnet="eth0@if9"
 banniere="Serveur DLNA Olivier"
 videos="VIDEO"
 images="PHOTO"
 musiques="AUDIO"
+books="BOOK"
 
-apt install toilet -y
-sleep 2
+apt install toilet -y > /dev/null
+sleep 1
+clear
 toilet -f smblock --filter metal 'MiniDLNA'
+echo -e "\n"
 
 apt update
 apt full-upgrade -y
@@ -21,11 +25,16 @@ apt install minidlna -y
 
 usermod -G minidlna $userdlna
 
+mkdir -p /home/Partage/{PHOTO,VIDEO,AUDIO,BOOK}
+sleep 1
+mkdir /var/log/dlna
+sleep 1
+
 echo "
 user=$userdlna
-media_dir=V,/home/$userdlna/$videos
-media_dir=P,/home/$userdlna/$images
-media_dir=A,/home/$userdlna/$musiques
+media_dir=V,${pathdlna}/${videos}
+media_dir=P,${pathdlna}/${images}
+media_dir=A,${pathdlna}/${musiques}
 db_dir=/var/cache/minidlna
 log_dir=/var/log/dlna
 port=8200
@@ -51,4 +60,5 @@ systemctl status minidlna
 
 clear
 
-ss -ratp
+ss -lntp
+
