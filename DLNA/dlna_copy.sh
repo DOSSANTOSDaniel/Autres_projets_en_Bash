@@ -4,7 +4,7 @@
 REMOTE_IP='192.168.1.112'
 REMOTE_USER='root'
 SHARE_DOC='/home/Partage'
-PA2SW='chayan'
+PA2SW='*****'
 COPY_FILE=''
 DEST_DIR=''
 
