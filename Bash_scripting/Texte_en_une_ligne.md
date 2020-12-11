@@ -1,7 +1,7 @@
 ## Permet de formater un texte de manière à l'afficher que dans un seule ligne :
 
 ```bash
-cat toto.txt | tr -s '\n' ' ' > Jovial.txt
+cat toto.txt | tr -s '\n' ' ' > newtoto.txt
 ```
 ## Exemple :
 
