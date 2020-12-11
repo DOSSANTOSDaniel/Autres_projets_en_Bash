@@ -20,3 +20,4 @@ cat toto.txt | tr -s '\n' ' ' > newtoto.txt
 
 1 2 3 4 5
 ```
+Autre solution, faire une boucle for sur chaque ligne du fichier puis placer chaque ligne dans un tableau et l'afficher.
