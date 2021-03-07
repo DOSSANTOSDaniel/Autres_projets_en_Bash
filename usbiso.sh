@@ -93,7 +93,8 @@ done
 if [[ "${iso}" == 'application/x-cd-image' ]]
 then
   size=$(du -s "${total}" | cut -f1)
-  echo  
+  echo
+  #BS= 512 (default), 4096 (4K), 65536 (64K), 1048576 (1M), 4194304 (4M)
   dd if="${total}" | pv -s "${size}"k | dd of=/dev/"${usbdev}" bs=1M oflag=sync
 else
   echo -e "\n Le fichier ${total} n'est pas de type ISO \n"
