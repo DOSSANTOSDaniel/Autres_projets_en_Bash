@@ -100,4 +100,5 @@ else
   echo -e "\n Le fichier ${total} n'est pas de type ISO \n"
 fi
 
-echo -e "\n Fin du script"
+echo -e "\n Fin du script :"
+echo 'Vous pouvez maintenant retirer la clé USB du port USB en toute sécurité !'
