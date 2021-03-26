@@ -23,7 +23,7 @@ read -p "Quelle version de tor voulez-vous ? (exemple 9.0.1) : " versiontor
 # Téléchargement de tor
 wget https://dist.torproject.org/torbrowser/"$versiontor"/tor-browser-linux64-"$versiontor"_fr.tar.xz
     
-# Extratction
+# Extraction
 tar xvf tor-browser-linux64*
     
 cd tor-browser_fr/ > /dev/null 2>&1

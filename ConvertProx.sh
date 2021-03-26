@@ -66,7 +66,7 @@ funVMDK()
 	# -O : Format de destination
 	# hdd.vmdk : Chemin du disque dur virtuel VMDK à convertir
 	# hdd.qcow2 ; Chemin du disque dur virtuel converti au format QCOW2
-	# Création d'une nouvelle machine virtuelle selons l'ancienne
+	# Création d'une nouvelle machine virtuelle selon l'ancienne
 	# Intégrer le disque sur la vm proxmox
 	#déplacer le disque dans le dossier de la VM (/var/lib/vz/images/numero de la VM)
 	#Je note le nom du disque vm-numero-disk-1.qcow2 et je supprime ce fichier. Enfin je renomme le fichier que l’on a importé.
@@ -78,7 +78,7 @@ funVDI()
 	# envoyer le disque vdi sur le serveur
 	# scp, ssh, winscp, rsync
 
-	# Convertion des disques de vdi vers qcow2
+	# Conversion des disques de vdi vers qcow2
 	apt-get install qemu-utils
 
 	qemu-img convert -c -f vdi mondisque.vdi -O qcow2 mondisque.qcow
@@ -86,7 +86,7 @@ funVDI()
 	# controle de l'image obtenu
 	qemu-img check mondisque.qcow
 
-	# Création d'une nouvelle machine virtuelle selons l'ancienne
+	# Création d'une nouvelle machine virtuelle selon l'ancienne
 
 	# Intégrer le disque sur la vm proxmox
 	# déplacer le disque dans le dossier de la VM (/var/lib/vz/images/numero de la VM)
@@ -100,7 +100,7 @@ funVDI()
 apt-get install qemu-utils
 
 
-echo -e "Convertion VM vers Proxmox \n"
+echo -e "Conversion VM vers Proxmox \n"
 while [ : ]
 do
 	echo -e "\nConvertir un fichier OVA [O]"

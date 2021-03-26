@@ -5,7 +5,7 @@ tar xzvf ventoy-1.0.08-linux.tar.gz
 echo ""
 echo "Tapez 1 pour installer"
 echo "Tapez 2 pour mettre à jour"
-echo "Tapez 3 pour reinstaller"
+echo "Tapez 3 pour réinstaller"
 echo ""
 read -p "Votre choix : " INST
 if [ "$INST" == "1" ]
@@ -25,7 +25,7 @@ then
         bash /tmp/ventoy-1.0.08/Ventoy2Disk.sh -I /dev/$CHOIX
 
 else
-	echo "Erreur de frape"
+	echo "Erreur de frappe"
 fi
 echo "Fin du script"
 

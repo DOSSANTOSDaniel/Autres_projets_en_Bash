@@ -12,7 +12,7 @@
 # souce :
 #http://le-libriste.fr/2009/04/5-moyens-dameliorer-les-performances-de-votre-poste-linux/#1-forcer-l%e2%80%99utilisation-de-la-memoire-vive-au-depend-de-la-swap
 
-# % memoire à la suite de laquelle on active swap
+# % mémoire à la suite de laquelle on active swap
 echo "vm.swappiness = 10" >> /etc/sysctl.conf
 
 # pcmcia
@@ -42,14 +42,14 @@ update-rc.d -f evms remove
 #Modem
 update-rc.d -f dns-clean remove
 
-# reduire le  nombre de consoles au démarrage
+# réduire le  nombre de consoles au démarrage
 sed -i -e "s/ACTIVE_CONSOLES="/dev/tty[1-6]"/ACTIVE_CONSOLES="/dev/tty[1-2]"/g" /etc/default/console-setup
 
-# modifier les programes inutils au démarrage 
+# Modifier les programmes inutiles au démarrage 
 apt-get install rcconf
 rcconf
 
-# A integrer au script : 5. Démarrer GRUB en mode « profile »
+# A intégrer au script : 5. Démarrer GRUB en mode « profile »
 
 #améliore les temps de chargement
 apt-get install preload

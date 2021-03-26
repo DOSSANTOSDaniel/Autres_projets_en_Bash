@@ -10,14 +10,14 @@
 # Bash_Version:                                     
 #--------------------------------------------------#
 # Description: Découpe un fichier vidéo en deux parties
-#              utilile si on veut mettre un fichier
+#              utile si on veut mettre un fichier
 #              vidéo de plus de 4go dans notre clé USB.  
 #                                                   
 # Options:                                          
 #                                                   
 # Usage:                                            
 #                                                   
-# Limits:    pas plus de 8go                                       
+# Limits:    Le film ne doit pas avoir plus de 8go                                       
 #                                                   
 # Licence:                                          
 #--------------------------------------------------#

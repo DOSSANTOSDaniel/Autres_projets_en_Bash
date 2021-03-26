@@ -3,7 +3,7 @@
 # téléchargement de l'image
 wget https://downloads.raspberrypi.org/raspbian_full_latest
 
-# désiper img
+# dézipper img
 unzip raspbian_*
 imgg="2019-04-08-raspbian-stretch-full.img"
 

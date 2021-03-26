@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "en fin ne pas mettre le '/' !!!"
+echo "En fin chemin ne pas mettre le '/' !!!"
 
 find $1 -type f -size -160k -exec rm -r "{}" \;
 

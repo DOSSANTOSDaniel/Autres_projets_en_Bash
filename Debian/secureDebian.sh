@@ -2,7 +2,7 @@
 #!/bin/bash
 
 #	Script permettant:
-#	1- Securiser Debian.
+#	1- Sécuriser Debian.
 #----------------------------------------------------------------#
 #	Exécuter le script en root!
 #

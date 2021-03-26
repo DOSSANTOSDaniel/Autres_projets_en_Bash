@@ -6,9 +6,10 @@
 # Date:    11/03/2021                            #
 # Version: 1.0                                   #
 #                                                #
-# Rôle:    Ce script permet de detecter quand    #
+# Rôle:    Ce script permet de détecter quand    #
 #          un certain port est en fonctionnement #
 #          sur une machine.                      #
+#          Avertissement par un signal sonore.   #
 #                                                #
 # Usage:   ./connport.sh                         #
 #************************************************#
