@@ -89,4 +89,5 @@ clear
 
 ss -lntp
 
-# minidlna -R ---> Scanner et indexer les fichiers multimédia dans la base du serveur UPNP/DLNA
+# minidlnad -r ---> Scanner et indexer les fichiers multimédia dans la base du serveur UPNP/DLNA
+# minidlnad -h
