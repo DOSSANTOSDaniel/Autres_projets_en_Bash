@@ -73,6 +73,8 @@ notify_interval=30
 
 max_connections=5
 
+wide_links=yes
+
 " > /etc/minidlna.conf
 
 sleep 2
