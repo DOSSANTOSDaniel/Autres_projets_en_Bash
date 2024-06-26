@@ -63,8 +63,8 @@ i_need() {
 }
 
 ### Variables
-ip_srv='87.88.200.33'
-port_srv='2244'
+ip_srv='xx.xx.xx.xx'
+port_srv='2288'
 loop_noise='2'
 timeout_min='15' #En minutes
 
